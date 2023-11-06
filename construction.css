@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .hiddenImg { display: none; }
+
+    .containerDesktop { margin: 40px; }
+}
+
+.constructionBody { background-color: var(--primary-color); }
+
+.containerDesktop {
+    background-color: white;
+    padding: 150px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .containerDesktop {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 300px;
+        margin-right: 40px;
+    }
+}

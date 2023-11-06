@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <meta name="description" content="Hospital dashboard with the patient appointment management feature">
+    <meta name="author" content="Lucie Belleudy">
+    <title>HEALTHCARE Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="./IMAGES/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7b545bf262.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main>
+        <div class="loginContainer">
+            <div class="loginContainer__item1"><img src="./IMAGES/logo.png" alt="hospital logo"
+                    class="loginContainer__img"></div>
+            <div class="loginContainer__item2">
+                <div class="loginContainer__inputs">
+                    <h2>WELCOME BACK</h2>
+                    <form class="login-form" id="login-form">
+                        <input type="email" id="username" placeholder="Email Adress" required><br>
+                        <input type="password" id="password" placeholder="Password" required><br>
+                        <button type="button" onclick="login()">LOGIN</button>
+                    </form>
+                    <p class="loginContainer__p">Forgot password?</p>
+                    <p id="error-message"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

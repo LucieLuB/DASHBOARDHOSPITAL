@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <meta name="description" content="Hospital dashboard with the patient appointment management feature">
+    <meta name="author" content="Lucie Belleudy">
+    <title>HEALTHCARE Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="appointments.css">
+    <link rel="icon" href="./IMAGES/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7b545bf262.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="appointmentBody">
+
+    <header>
+        <div class="menu">
+            <div class="menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu__img1">
+                <img src="./IMAGES/logo.png" alt="logo hospital" width="200">
+            </div>
+            <ul>
+                <li class="menu__img" style=" text-align: center;">
+                    <img src="./IMAGES/logo.png" alt="logo hospital" width="200">
+                </li>
+                <li><a href="construction.html"><i class="fa-solid fa-table-columns"></i> Dashboard <i
+                            class="fa-solid fa-chevron-right" style="padding-left: 10px; font-size: 10px;"></i></a></li>
+                <li><a href="appointments.html"><i class="fa-solid fa-calendar-days"></i> Appointments <i
+                            class="fa-solid fa-chevron-right" style="padding-left: 10px; font-size: 10px;"></i></a></li>
+                <li><a href="construction.html"><i class="fa-regular fa-user"></i> Patients <i
+                            class="fa-solid fa-chevron-right" style="padding-left: 10px; font-size: 10px;"></i></a></li>
+                <li><a href="construction.html"><i class="fa-solid fa-heart-pulse"></i> Doctors <i
+                            class="fa-solid fa-chevron-right" style="padding-left: 10px; font-size: 10px;"></i></a></li>
+                <li><a href="index.html"> <i class="fa-solid fa-arrow-right-from-bracket"></i> LogOut <i
+                            class="fa-solid fa-chevron-right" style="padding-left: 10px; font-size: 10px;"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="appointmentContainer">
+        <div class="appointmentContent">
+            <h1>Welcome, <span style="color: #00C3B9;">Dr. Smith Henry</span></h1>
+            <div class="appointmentCalendar">
+                <h2>Calendar Appointments</h2>
+                <div class="appointmentFilter">
+                    <div class="apppointmentCalendarDate">
+                        <button> <i class="fa-solid fa-chevron-left"></i></button>
+                        <p>Nov 2, 2023 <span>Today <i class="fa-solid fa-chevron-down"></i></span></p>
+                        <button> <i class="fa-solid fa-chevron-right"></i> </button>
+                    </div>
+                    <div class="appointmentCalendarFilter">
+                        <button>Doctor <i class="fa-solid fa-chevron-down"></i></button>
+                        <button class="btnAdd" style="background-color: #00C3B9; border: none; padding: 10px 40px;"> +
+                        </button>
+                        <button> <i class="fa-regular fa-calendar"></i> <i class="fa-solid fa-bars"></i> </button>
+                    </div>
+                </div>
+                <div class="appointmentCalendarContainer">
+                    <div class="appointmentCalendarContent">
+                        <div class="appointmentCalendarDoctor">
+                            <img src="./IMAGES/doctor-foto.png" alt="foto doctor" width="50">
+                            <p>Abril Lewis <br> Physician </p>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>08:00</p>
+                            <div class="appointmentCalendarTime__content">
+                                <p>Robert Fox</p>
+                                <p>Checked Out</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>09:00</p>
+                            <div class="appointmentCalendarTime__content item2">
+                                <p>Cody Fisher</p>
+                                <p>Checked In</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>10:00</p>
+                            <div class="appointmentCalendarTime__content item3">
+                                <p>Annette Black</p>
+                                <p>Checked In</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>11:00</p>
+                            <div class="appointmentCalendarTime__content item4">
+                                <p>Robert Fox</p>
+                                <p>Checked Out</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>12:00</p>
+                            <div class="appointmentCalendarTime__content item5">
+                                <p>Seminar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appointmentCalendarContent">
+                        <div class="appointmentCalendarDoctor">
+                            <img src="./IMAGES/doctor-foto.png" alt="foto doctor" width="50">
+                            <p>Allan Hicks <br> General Medicine </p>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>08:00</p>
+                            <div class="appointmentCalendarTime__content">
+                                <p>Robert Fox</p>
+                                <p>Checked Out</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>09:00</p>
+                            <div class="appointmentCalendarTime__content item2">
+                                <p>Cody Fisher</p>
+                                <p>Checked In</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>10:00</p>
+                            <div class="appointmentCalendarTime__content item3">
+                                <p>Annette Black</p>
+                                <p>Checked In</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>11:00</p>
+                            <div class="appointmentCalendarTime__content item4">
+                                <p>Robert Fox</p>
+                                <p>Checked Out</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>12:00</p>
+                            <div class="appointmentCalendarTime__content item5">
+                                <p>Seminar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appointmentCalendarContent">
+                        <div class="appointmentCalendarDoctor">
+                            <img src="./IMAGES/doctor-foto.png" alt="foto doctor" width="50">
+                            <p>Bianca Heath <br> Cardiologist </p>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>08:00</p>
+                            <div class="appointmentCalendarTime__content">
+                                <p>Robert Fox</p>
+                                <p>Checked Out</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>09:00</p>
+                            <div class="appointmentCalendarTime__content item2">
+                                <p>Cody Fisher</p>
+                                <p>Checked In</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>10:00</p>
+                            <div class="appointmentCalendarTime__content item3">
+                                <p>Annette Black</p>
+                                <p>Checked In</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>11:00</p>
+                            <div class="appointmentCalendarTime__content item4">
+                                <p>Robert Fox</p>
+                                <p>Checked Out</p>
+                            </div>
+                        </div>
+                        <div class="appointmentCalendarTime">
+                            <p>12:00</p>
+                            <div class="appointmentCalendarTime__content item5">
+                                <p>Seminar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="appointmentList">
+                <h2>List Appointments</h2>
+                <div class="appointmentFilter">
+                    <div class="apppointmentCalendarDate">
+                        <button> <i class="fa-solid fa-chevron-left"></i> </button>
+                        <p>Nov 2, 2023 <span>Today <i class="fa-solid fa-chevron-down"></i></span></p>
+                        <button> <i class="fa-solid fa-chevron-right"></i> </button>
+                    </div>
+                    <div class="appointmentCalendarFilter">
+                        <button>Doctor <i class="fa-solid fa-chevron-down"></i></button>
+                        <button class="btnAdd" style="background-color: #00C3B9; border: none; padding: 10px 40px;"> +
+                        </button>
+                        <button> <i class="fa-regular fa-calendar"></i> <i class="fa-solid fa-bars"></i> </button>
+                    </div>
+                </div>
+                <div class="appointmentCalendarDoctor">
+                    <img src="./IMAGES/doctor-foto.png" alt="foto doctor" width="50">
+                    <p>Abril Lewis <br> Physician </p>
+                </div>
+                <div class="appointementTable">
+                    <table class="appointmentTableContent">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Doctor</th>
+                                <th>Patient</th>
+                                <th>Diseases</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>08:00</td>
+                                <td>Dr. Kenny Josh</td>
+                                <td>Henry Fox</td>
+                                <td>Lorem ipsum</td>
+                                <td>In Progress</td>
+                                <td><button><i class="fa-regular fa-eye"
+                                            style="font-size: 20px; color: #00C3B9;"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>09:00 AM</td>
+                                <td>Dr. Johnson</td>
+                                <td>Jane Smith</td>
+                                <td>Headache</td>
+                                <td>Visited</td>
+                                <td><button><i class="fa-regular fa-eye"
+                                            style="font-size: 20px; color: #00C3B9;"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>10:00 AM</td>
+                                <td>Dr. Johnson</td>
+                                <td>Jane Smith</td>
+                                <td>Headache</td>
+                                <td>In progress</td>
+                                <td><button><i class="fa-regular fa-eye"
+                                            style="font-size: 20px; color: #00C3B9;"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM</td>
+                                <td>Dr. Johnson</td>
+                                <td>Jane Smith</td>
+                                <td>Headache</td>
+                                <td>Canceled</td>
+                                <td><button><i class="fa-regular fa-eye"
+                                            style="font-size: 20px; color: #00C3B9;"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>12:00 AM</td>
+                                <td>Dr. Johnson</td>
+                                <td>Jane Smith</td>
+                                <td>Headache</td>
+                                <td>Waiting</td>
+                                <td><button><i class="fa-regular fa-eye"
+                                            style="font-size: 20px; color: #00C3B9;"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="appointmentAdd">
+                <h2>Add Appointment</h2>
+                <form class="appointmentForm">
+                    <div class="appointmentFormContent">
+                        <div>
+                            <label for="doctor">Asigned Doctor</label>
+                            <input type="text" name="doctor" id="doctor" placeholder="Dr Jonhson ">
+                        </div>
+                        <div>
+                            <label for="type">Consultation Type</label>
+                            <input type="text" name="type" id="type" placeholder="General medicine">
+                        </div>
+                        <div>
+                            <label for="location">Location</label>
+                            <input type="text" name="location" id="location" placeholder="Laussane">
+                        </div>
+                        <div>
+                            <label for="patient">Patient Name</label><br>
+                            <input type="text" name="patient" id="patient" placeholder="Henry Fox"><br>
+                        </div>
+                        <div>
+                            <label for="time">Time</label><br>
+                            <input type="time" name="time" id="time"><br>
+                        </div>
+                        <div>
+                            <label for="date">Date of Consultation</label><br>
+                            <input type="date" name="date" id="date"><br>
+                        </div>
+                    </div>
+                    <label for="reason" class="reason">Reason for Consultation</label><br>
+                    <textarea name="reason" id="reason" cols="30" rows="10"
+                        placeholder="Patient experiences persistent abdominal pain and seeks medical guidance to determine the underlying cause of the discomfort."></textarea><br>
+                    <label for="file">Add Attachment (Optional)</label><br>
+                    <input type="file" name="file" id="file"><br>
+                    <div class="appointmentFormButtons">
+                        <button class="btnSave">Save</button>
+                        <button class="btnCancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>HEALTHCARE</h3>
+        <h4>Hospital center</h4>
+        <hr style=" border: 1px solid #00C3B9; width: 90%; margin: 0 auto; ">
+        <div class="footerContainer">
+            <div class="footerContainer__item">
+                <h5>Contact Us</h5>
+                <ul>
+                    <li><a class=" footerContainer__a" href="tel:+34617680207"><i class="fa-solid fa-phone"></i>+34 617
+                            680
+                            207</a></li>
+                    <li><a class="footerContainer__a" href="mailto:lulubelle44@hotmail.fr"><i
+                                class="fa-solid fa-envelope"></i>lulubelle44@hotmail.fr</a></li>
+                    <li><i class="fa-solid fa-house"></i>El Vendrell,
+                        Tarragona, Spain</li>
+                </ul>
+                <hr style=" border: 1px solid; color: #424242; width: 60%; margin: 0 auto; ">
+            </div>
+            <div class="footerContainer__item">
+                <h5>Hospital</h5>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+                <hr style=" border: 1px solid; color: #424242; width: 60%; margin: 0 auto; ">
+            </div>
+            <div class="footerContainer__item">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="#">Privacity Policy</a></li>
+                    <li><a href="#">Terms & Services</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+                <hr style=" border: 1px solid; color: #424242; width: 60%; margin: 0 auto; ">
+            </div>
+            <div class="footerContainer__item">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Techlabz KeyBox</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Forum</a></li>
+                </ul>
+                <hr style=" border: 1px solid; color: #424242; width: 60%; margin: 0 auto; ">
+            </div>
+            <div class="footerContainer__item">
+                <h5>Subscribe to our Newsletter</h5>
+                <form class="footer-form">
+                    <input type="email" name="email" id="email" placeholder=" Your email adress">
+                    <button>Send</button>
+                    <p>* Will send you weekly updates for your better tool management.</p>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

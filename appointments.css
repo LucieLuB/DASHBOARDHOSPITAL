@@ -1,0 +1,290 @@
+/*-------GENERIC STYLES APPOINTMENT----------
+--------------------------------------------*/
+
+.appointmentContainer {
+    background-color: var(--primary-color);
+    padding: 30px;
+    color: var(--fourty-color);
+}
+
+.appointmentContent {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;  
+}
+
+.appointmentCalendar, 
+.appointmentList, 
+.appointmentAdd {
+    box-shadow: -8px 12px 18px 0px rgba(0, 0, 0, 0.5);
+    padding: 40px 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.apppointmentCalendarDate, 
+.appointmentCalendarFilter, 
+.appointmentCalendarDoctor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.appointmentCalendar button, 
+.appointmentList button {
+    background-color: white;
+    border: 1px solid var(--terciary-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.appointmentCalendar h2,
+.appointmentList h2 { 
+    font-size: 20px; 
+}
+
+.appointmentCalendar button:hover, 
+.appointmentList button:hover { 
+    background-color: var(--terciary-color); 
+}
+
+.appointmentCalendar i, 
+.appointmentList i {
+    font-size: 10px;
+    margin-right: -10px;
+    margin-left: 10px;
+}
+
+.btnAdd {
+    font-size: 20px;
+    color: white;
+}
+
+/*------- STYLES CONTAINER CALENDAR APPOINTMENT----------
+-------------------------------------------------------*/
+
+.appointmentCalendarDoctor {
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 2px solid var(--terciary-color);
+    padding-bottom: 15px;
+}
+
+.appointmentCalendarTime {
+    display: flex;
+    text-align: left;
+    margin: 10px;
+}
+
+.appointmentCalendarTime__content {
+    margin-left: 20px;
+    background-color: rgba(94, 196, 130, 0.744);
+    width: 100%;
+    padding: 10px 10px 40px 10px;
+    border-left: 3px solid green;
+    border-radius: 5px;
+}
+
+.appointmentCalendarTime__content p:nth-child(2) {
+    color: var(--terciary-color);
+    font-size: 13px;
+}
+
+.item2 {
+    background-color: rgba(196, 137, 94, 0.451);
+    border-left: 3px solid orangered;
+}
+
+.item3 {
+    background-color: rgba(181, 94, 196, 0.451);
+    border-left: 3px solid violet;
+}
+
+.item4 {
+    background-color: rgba(196, 188, 94, 0.451);
+    border-left: 3px solid orange;
+}
+
+.item5 {
+    background-color: rgba(94, 176, 196, 0.451);
+    border-left: 3px solid blue;
+    padding-bottom: 150px;
+}
+
+/*------- STYLES CONTAINER LIST APPOINTMENT (TABLE DESKTOP)----------
+-------------------------------------------------------*/
+
+.appointmentTableContent {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .appointmentTableContent button {
+    border: none;
+    cursor: pointer;
+  }
+
+  .appointmentTableContent button:hover {
+    background-color: white;
+    border: 1px solid var(--terciary-color);
+  }
+  
+  .appointmentTableContent th, .appointmentTableContent td {
+    border: 1px solid var(--fourty-color);
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+  }
+  
+/*------- STYLES CONTAINER LIST APPOINTMENT (TABLE MOBIL)----------
+-------------------------------------------------------*/
+
+  @media (max-width: 992px) {
+    .appointmentTableContent {
+      display: block;
+      width: 100%;
+    }
+  
+    .appointmentTableContent thead { display: none; }
+  
+    .appointmentTableContent tbody { display: block; }
+  
+    .appointmentTableContent tr {
+      margin-bottom: 10px;
+      border: 1px solid var(--terciary-color);
+      display: block;
+    }
+  
+    .appointmentTableContent td {
+      display: block;
+      text-align: left;
+      border: none;
+    }
+
+    .appointmentTableContent td:nth-child(1)::before {
+        content: "Time: ";
+        display: inline-block;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+
+    .appointmentTableContent td:nth-child(2)::before {
+        content: "Doctor: ";
+        display: inline-block;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+
+    .appointmentTableContent td:nth-child(3)::before {
+        content: "Patient : ";
+        display: inline-block;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+
+    .appointmentTableContent td:nth-child(4)::before {
+        content: "Diseases : ";
+        display: inline-block;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+
+    .appointmentTableContent td:nth-child(5)::before {
+        content: "Status : ";
+        display: inline-block;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+
+    .appointmentTableContent td:nth-child(6)::before {
+        content: "Actions : ";
+        display: inline-block;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+  }
+
+/*------- STYLES CONTAINER ADD APPOINTMENT ----------
+-------------------------------------------------------*/
+
+.appointmentAdd h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.appointmentAdd { max-height: none; }
+
+.appointmentForm input {
+    width: 90%;
+    font-family: var(--primary-font);
+}
+
+.appointmentForm { text-align: left; }
+
+.appointmentForm label { padding-left: 13px; }
+
+.appointmentForm textarea {
+    margin-top: 10px;
+    margin-left: 13px;
+    font-family: var(--primary-font);
+    border: 2px solid var(--terciary-color);
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.appointmentFormButtons { text-align: center; }
+
+.appointmentFormButtons button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    width: 110px;
+}
+
+.btnSave {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btnSave:hover { background-color: var(--secundary-color); }
+
+.btnCancel { background-color: white; }
+
+.btnCancel:hover { border-color: var(--secundary-color); }
+
+/*------- STYLES CONTAINER ADD APPOINTMENT (DESKTOP)----------
+-------------------------------------------------------*/
+
+@media (min-width:992px)  {
+    .appointmentFilter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .appointmentFilter button { margin-right: 20px; }
+
+    .appointmentCalendarContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .appointmentFormContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  #reason, 
+  #file {
+    width: 96%;
+  }  
+}
+
+@media (min-width:768px) { .appointmentContainer { margin-left: 260px; } }
+
