@@ -40,7 +40,7 @@
   - `index.html` and his `index.hmtl` is the welcome page that allows access to the login page.
   - `login.html` and his `login.css` is the login page that allows access to the others pages of the project.
   - `script.js` includes functions related to the navigation and login menu. 
-- [GitHubLink]()
+- [GitHubLink](https://github.com/LucieLuB/DASHBOARDHOSPITAL)
 
 ### OVERVIEM DESKTOP HTML
 
